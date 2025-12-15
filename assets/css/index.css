@@ -1065,6 +1065,15 @@ body {
   .industries-hub {
     grid-template-columns: 1fr
   }
+
+  /* Fleet Grid Adjustment for small screens */
+  .fleet-grid,
+  .services-grid,
+  .routes-zone-grid {
+    grid-template-columns: 1fr;
+    /* Stack on small phones */
+    gap: 24px;
+  }
 }
 
 /* FAQ */
@@ -1160,6 +1169,7 @@ details[open] summary {
   color: var(--secondary)
 }
 
+/* GLOBAL RESPONSIVE ADJUSTMENTS */
 @media(max-width:900px) {
   .hero-inner {
     flex-direction: column;
@@ -1187,5 +1197,43 @@ details[open] summary {
 
   .hero-image {
     max-width: 100%
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* Navigation */
+  .header-inner {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .site-nav {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+
+  /* Spacing */
+  .container {
+    padding: 0 16px;
+  }
+
+  .hero {
+    padding: 60px 0 40px;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
   }
 }
