@@ -39,6 +39,9 @@ body {
   padding: 0;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  /* Critical User Request for tolerance */
+  width: 100%;
 }
 
 /* CONTAINER */
@@ -1200,29 +1203,45 @@ details[open] summary {
   }
 }
 
-@media (max-width: 768px) {
+/* TABLET & MOBILE NAVIGATION (Adjusted Breakpoint) */
+@media (max-width: 1024px) {
 
-  /* Navigation */
+  /* Navigation Stack */
   .header-inner {
     flex-direction: column;
     gap: 16px;
+  }
+
+  .brand {
+    flex-direction: column;
+    text-align: center;
+    gap: 4px;
+  }
+
+  /* Hide subline on small screens to prevent overflow */
+  .brand-subline {
+    display: none;
   }
 
   .site-nav {
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 12px;
   }
 
   .nav-link {
-    font-size: 0.9rem;
-    padding: 6px 12px;
+    font-size: 0.95rem;
+    padding: 8px 16px;
+    background: #f8fafc;
+    /* Added background for touch targets */
   }
 
   /* Spacing */
   .container {
-    padding: 0 16px;
+    padding: 0 20px;
+    overflow-x: hidden;
+    /* Prevent container overflow */
   }
 
   .hero {
