@@ -1,0 +1,16 @@
+{
+    "name": "ecity-enquiry-worker",
+    "version": "1.0.0",
+    "description": "Cloudflare worker for Ecity Logistics",
+    "main": "src/index.js",
+    "scripts": {
+        "login": "wrangler login",
+        "deploy": "wrangler deploy"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "wrangler": "^3.0.0"
+    }
+}

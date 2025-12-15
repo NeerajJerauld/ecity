@@ -363,7 +363,15 @@
 
           <div class="enquire-card">
             <h3 class="form-title">Send an Enquiry</h3>
-            <form method="POST" action="https://formspree.io/f/yourformid">
+            <div id="form-success" style="display: none; text-align: center; padding: 20px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#2e7d32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <h4 style="margin-top: 1rem;">Thank You!</h4>
+                <p>We have received your enquiry. Our team will contact you shortly.</p>
+            </div>
+            <form id="enquiry-form" method="POST" action="#">
               <div class="form-row">
                 <label for="name">Name</label>
                 <input id="name" name="name" class="form-input" required placeholder="Name">
@@ -432,5 +440,6 @@
       </div>
     </div>
   </footer>
+  <script src="assets/js/contact.js"></script>
 </body>
 </html>
