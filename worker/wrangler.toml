@@ -2,5 +2,14 @@ name = "ecity-enquiry-worker"
 main = "src/index.js"
 compatibility_date = "2023-10-25"
 
+
 # [vars]
 # RECIPIENT_EMAIL = "neeraj.jerauld@gmail.com"
+
+[[d1_databases]]
+binding = "DB" # i.e. available in your Worker on env.DB
+database_name = "ecity-db"
+database_id = "4d26a0c0-9ae9-42d5-aff9-c084d5bf5347"
+
+
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Ecity Logistics</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="assets/css/index.css"> <!-- Base styles -->
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="dashboard-container" style="display:none;" id="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a href="/" class="logo-text">Ecity Admin</a>
+            </div>
+
+            <nav class="sidebar-nav" id="sidebar-nav">
+                <!-- Injected via JS -->
+            </nav>
+
+            <div class="user-profile">
+                <div class="user-info">
+                    <div class="avatar" id="user-avatar">AD</div>
+                    <div class="user-details">
+                        <h4 id="user-name">Loading...</h4>
+                        <span id="user-role">...</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="top-bar">
+                <h1 class="page-title" id="page-title">Dashboard</h1>
+                <button onclick="logout()" class="logout-btn">Sign Out</button>
+            </div>
+
+            <div id="dashboard-content">
+                <!-- Content injected via JS -->
+                <div style="text-align:center; margin-top:50px;">
+                    <div class="spinner"></div>
+                    <p>Loading data...</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="assets/js/dashboard.js"></script>
+</body>
+
+</html>
