@@ -259,6 +259,18 @@ body {
   color: #0284c7
 }
 
+.btn-whatsapp {
+  background: #25D366;
+  color: var(--white);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.25);
+}
+
+.btn-whatsapp:hover {
+  background: #128c7e;
+  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.35);
+  transform: translateY(-1px);
+}
+
 /* SECTIONS */
 .section {
   padding: 100px 0
@@ -826,6 +838,17 @@ body {
   align-items: center;
   justify-content: center;
   color: var(--secondary);
+}
+
+/* WhatsApp Specific Styling */
+.contact-method[href*="wa.me"] .method-icon {
+  color: #25D366;
+  /* WhatsApp Green */
+  background: rgba(37, 211, 102, 0.1);
+}
+
+.contact-method[href*="wa.me"]:hover {
+  border-color: #25D366;
 }
 
 /* FORM */
