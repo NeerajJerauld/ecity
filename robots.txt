@@ -1,3 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /dashboard.html
+Disallow: /assets/css/
+Disallow: /assets/js/
+
 Sitemap: https://ecitylogistics.com/sitemap.xml
