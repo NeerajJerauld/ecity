@@ -105,8 +105,12 @@ document.addEventListener('DOMContentLoaded', () => {
             const data = await response.json();
 
             if (response.ok && data.token) {
-                // Success
-                localStorage.setItem('ecity_auth', JSON.stringify(data));
+                // Success - save user data
+                localStorage.setItem('authToken', data.token);
+                localStorage.setItem('userRole', data.role);
+                localStorage.setItem('userName', data.name);
+                localStorage.setItem('userId', data.id);
+                localStorage.setItem('userPermissions', data.permissions);
                 window.location.href = 'dashboard.html';
             } else {
                 throw new Error(data.error || 'Invalid credentials');
